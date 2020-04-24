@@ -72,6 +72,8 @@ public class CaptchaHandler {
                 return;
             }
             this.assignCaptcha(player);
+        } else {
+        	plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), "lp user " + player.getName() + " permission settemp captcha.bypass true " + plugin.getConfig().getString("captcha-settings.cooldown"));
         }
     }
 

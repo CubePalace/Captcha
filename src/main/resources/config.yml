@@ -7,8 +7,9 @@ captcha-settings:
   color: false
   lines: true
   maps: 1000
-  mode: FIRSTJOIN # FIRSTJOIN, ALL, NONE
+  mode: ALL # FIRSTJOIN, ALL, NONE
   op-override: false
-  permission-override: false
+  permission-override: true
   time: 600
   update-message: true
+  cooldown: "1w"
